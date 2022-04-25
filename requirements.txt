@@ -1,0 +1,6 @@
+Version 1
+[x] We want to be able to store the todos
+[x] We want to display/see the todos
+[x] We want to add another todo list item
+[x] We want to be able to edit a todo list item
+[] We want to delete the todo list item
