@@ -12,14 +12,38 @@
     
     <script>
         let todos = ['item1', 'item2', 'item3']
+        function displayTodos(){
+            console.log('Here are my todolist', todos)
+        }
+        displayTodos()
 
-        console.log(todos)
+       
         todos.push('item4')
-        console.log(todos)
+        
         todos[0]='item1 updated'
-        console.log(todos)
+        displayTodos()
         todos.splice(0, 1)
-        console.log(todos)
+      
+
+        function add(item){
+            todos.push(item)
+            displayTodos()
+        }
+        add('item5')
+        displayTodos()
+
+        function edit(position, value) {
+         todos[position] = value
+         displayTodos()
+        }
+        edit(0, "This is a new item")
+
+        function remove(position){
+        todos.splice(position, 1)
+        displayTodos()
+        }
+        remove(0)
+        
     </script>
 </body>
 </html>

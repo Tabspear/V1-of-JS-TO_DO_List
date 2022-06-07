@@ -1,0 +1,2 @@
+let outside = 'outside';
+
